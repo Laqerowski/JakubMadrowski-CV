@@ -4,6 +4,7 @@
     <title>Jakub Mądrowski - CV</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -12,7 +13,7 @@
                 <h1>Jakub Mądrowski</h1>
                 <span>Magazynier</span>
                 <div>
-                    <a class="cv-download-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Pobierz CV</a>
+                    <a class="cv-download-link" id="button_one">Pobierz CV</a>
                 </div>
             </div>
             <address>
@@ -24,7 +25,7 @@
                 </ul>
             </address>
         </header>
-        <main>
+        <main class="main">
             <section>
                 <h2>O mnie</h2>
                 <p>Mam na imię <b>Jakub</b>. Jestem studentem II roku na kierunku Data Science na Collegium Da Vinci w Poznaniu.
@@ -35,10 +36,11 @@
             <section>
                 <h2>Doświadczenie zawodowe</h2>
                 <ul>
-                    <li>2018: Monter instalacji niskiego napięcia</li>
-                    <li>2019: Tartacznik</li>
-                    <li>2020: Doradca w sklepie budowlanym, Magazynier</li>
-                    <li>2021 - obecnie: Magazynier - operator wózka widłowego</li>
+                    <li>czerwiec 2018 - lipiec 2018: Monter instalacji niskiego napięcia</li>
+                    <li>marzec 2019 - grudzień 2019: Tartacznik</li>
+                    <li>lipec 2020 - sierpień 2020: Doradca w sklepie budowlanym</li>
+                    <li>grudzień 2020 - styczeń 2021: Magazynier </li>
+                    <li>grudzień 2021 - obecnie: Magazynier - operator wózka widłowego</li>
                 </ul>
             </section>
             <section>
@@ -56,6 +58,49 @@
                 </ul>
             </section>
             <section>
+                <h2>Kompetencje</h2>
+                <div class="competicion-settings">
+                    <div class="circle-settings">
+                        <div class="skill-level">
+                            <div class="skill-circle skill-filled"></div>
+                            <div class="skill-circle skill-filled"></div>
+                            <div class="skill-circle skill-empty"></div>
+                            <div class="skill-circle skill-empty"></div>
+                            <div class="skill-circle skill-empty"></div>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-circle skill-filled"></div>
+                            <div class="skill-circle skill-filled"></div>
+                            <div class="skill-circle skill-empty"></div>
+                            <div class="skill-circle skill-empty"></div>
+                            <div class="skill-circle skill-empty"></div>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-circle skill-filled"></div>
+                            <div class="skill-circle skill-filled"></div>
+                            <div class="skill-circle skill-empty"></div>
+                            <div class="skill-circle skill-empty"></div>
+                            <div class="skill-circle skill-empty"></div>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-circle skill-filled"></div>
+                            <div class="skill-circle skill-empty"></div>
+                            <div class="skill-circle skill-empty"></div>
+                            <div class="skill-circle skill-empty"></div>
+                            <div class="skill-circle skill-empty"></div>
+                        </div>
+                    </div>
+                    <div>
+                    <ul class="list-settings">
+                            <li>Python</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="fonty">
                 <h2>Zainteresowania</h2>
                 <ul class="hobbies">
                     <li><img src="images/gamepad.png"/>
@@ -63,10 +108,12 @@
                             <h3>Gry komputerowe</h3>
                             <p>
                                 Gram od zawsze, a moja przygoda z grami rozkręciła się w 
-                                momencie gdy dostałem konsolę na święta mając 11 lat.
+                                momencie gdy dostałem konsole na święta mając 11 lat.
                                 Zamarzyłem o tym by tworzyć gry, lecz ta pasja sprawiła,
+                                że zacząłem coraz śmielej interesować się tym jak są zbudowane gry,
+                                co sprawiło równoczesne zainteresowanie różnych dziedzin
                                 że zacząłem coraz śmielej interesowac się tym jak są zbudowane gry,
-                                co sprawiło równoczesne zainteresowanie różnych dziedziń
+                                co sprawiło równoczesne zainteresowanie różnych dziedzin
                                 związanych z tworzeniem gier video.
                             </p>
                         </div>
@@ -76,7 +123,7 @@
                             <h3>Piłka nożna</h3>
                             <p>
                                 Zacząłem mając 4 lata, kiedy tata zabrał mnie na boisko 200m od domu.
-                                Trenowałem przez 10 lat i chodź obecnie już nie gram, to nie ma 
+                                Trenowałem przez 10 lat i choć obecnie już nie gram, to nie ma 
                                 weekendu, żebym nie oglądał jakiegoś meczu. Uwielbiam też śledzić 
                                 na bieżąco kwestie transferów zawodników, taktyki zespołów, a osobiście
                                 wielki fan Lecha Poznań oraz angielskiego Liverpool.
@@ -87,7 +134,7 @@
                         <div>
                             <h3>Psychologia</h3>
                             <p>
-                                Uwielbiam czytać ksążki oraz słuchać wykładów/podcastów związanych z psychologią oraz socjologią.
+                                Uwielbiam czytać książki oraz słuchać wykładów/podcastów związanych z psychologią oraz socjologią.
                                 Pozwalają mi one lepiej zrozumieć różne zachowania ludzi wokół mnie, ale także
                                 obserwować siebie, poznać jakie mechanizmy związane z naszą podświadomością kreują nasze
                                 zachowania w przeróżnych sytuacjach.
@@ -100,7 +147,7 @@
                             <p>
                                 Pierwszy kontakt z komputerem miałem mając 3-4 lata. Od tamtego momentu wiedziałem,
                                 że chciałbym łączyć swoją przyszłość ze światem IT. Zawsze interesowało mnie to jak zbudowane
-                                są komputery. Bawiłem się różnymi programami, od klasycznego Gimpa, przez montaż w Camtasia Studio, aż
+                                są komputery. Bawiłem się różnymi programami, od klasycznego GIMP-a, przez montaż w Camtasia Studio, aż
                                 po programowanie w Visual Studio Code.
                             </p>
                         </div>
@@ -109,5 +156,6 @@
             </section>
         </main>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
